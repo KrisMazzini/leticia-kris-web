@@ -9,10 +9,10 @@ const headingVariants = cva(
     variants: {
       level: {
         display: "font-script text-8xl",
-        h1: "text-5xl",
-        h2: "text-3xl",
-        h3: "text-2xl",
-        h4: "text-xl ",
+        h1: "text-8xl",
+        h2: "text-5xl",
+        h3: "text-3xl",
+        h4: "text-2xl ",
       },
     },
     defaultVariants: {
