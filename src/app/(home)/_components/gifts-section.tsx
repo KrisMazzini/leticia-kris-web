@@ -6,7 +6,7 @@ export function GiftsSection() {
   return (
     <section
       id="presentes"
-      className="flex flex-col space-y-8 max-w-6xl mx-auto px-8 pt-20 pb-10"
+      className="flex flex-col space-y-8 max-w-6xl mx-auto px-8 pt-20 pb-10 scroll-mt-14"
     >
       <header className="text-center max-w-xl mx-auto">
         <Text as="span" variant="label" className="block">

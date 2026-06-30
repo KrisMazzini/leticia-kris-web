@@ -3,7 +3,7 @@ import { Heading, Text } from "@/shared/components/ui";
 
 export function OurStory() {
   return (
-    <section id="historia" className="bg-card py-20 px-8">
+    <section id="historia" className="bg-card py-20 px-8 scroll-mt-14">
       <div className="max-w-6xl mx-auto">
         <header className="text-center mb-14">
           <Text as="span" variant="label" className="block">

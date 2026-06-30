@@ -1,10 +1,10 @@
-import NextLink from "next/link";
 import type { HTMLAttributes } from "react";
 
 import { OpenCartButton } from "@/features/gifts/components/open-cart-button";
 import { cn } from "@/lib/utils";
 
-import { Heading, Link } from "./ui";
+import { LogoLink } from "./logo-link";
+import { NavLinks } from "./nav-links";
 
 interface HeaderProps extends HTMLAttributes<HTMLElement> {}
 
@@ -19,15 +19,10 @@ export function Header({ className, ...props }: HeaderProps) {
       )}
       {...props}
     >
-      <NextLink href="/" className="mr-auto no-underline">
-        <Heading level="h3">
-          L <span className="text-terra">&amp;</span> K
-        </Heading>
-      </NextLink>
+      <LogoLink />
 
       <nav className="hidden items-center gap-4 sm:flex">
-        <Link href="#historia">Nossa história</Link>
-        <Link href="#presentes">Lista de presentes</Link>
+        <NavLinks />
       </nav>
 
       <OpenCartButton />
