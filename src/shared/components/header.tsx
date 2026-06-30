@@ -1,8 +1,10 @@
 import NextLink from "next/link";
 import type { HTMLAttributes } from "react";
 
+import { OpenCartButton } from "@/features/gifts/components/open-cart-button";
 import { cn } from "@/lib/utils";
-import { Button, Heading, Link } from "./ui";
+
+import { Heading, Link } from "./ui";
 
 interface HeaderProps extends HTMLAttributes<HTMLElement> {}
 
@@ -28,7 +30,7 @@ export function Header({ className, ...props }: HeaderProps) {
         <Link href="#presentes">Lista de presentes</Link>
       </nav>
 
-      <Button size="md">Carrinho</Button>
+      <OpenCartButton />
     </header>
   );
 }

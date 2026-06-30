@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Caveat, Karla, Spectral } from "next/font/google";
 
 import "./globals.css";
+
+import { CartDrawer } from "@/features/gifts/components/cart-drawer";
+import { CartProvider } from "@/features/gifts/context/cart-context";
 import { Header } from "@/shared/components/header";
 
 const caveat = Caveat({
@@ -39,9 +42,12 @@ export default function RootLayout({
       className={`${caveat.variable} ${spectral.variable} ${karla.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bg text-ink font-sans">
-        <Header />
+        <CartProvider>
+          <Header />
+          <CartDrawer />
 
-        <div className="overflow-x-hidden flex-1">{children}</div>
+          <div className="overflow-x-hidden flex-1">{children}</div>
+        </CartProvider>
       </body>
     </html>
   );

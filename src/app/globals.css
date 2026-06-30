@@ -34,6 +34,12 @@
   --animate-slide-in: slideIn 320ms cubic-bezier(.22,1,.36,1) both;
   --animate-fade-in:  fadeIn 250ms ease both;
   --animate-pop-in:   popIn 300ms cubic-bezier(.22,1,.36,1) both;
+
+  /* Easing */
+  --ease-spring: cubic-bezier(.22,1,.36,1);
+
+  /* Z-index */
+  --z-60: 60;
 }
 
 @keyframes slideIn {
