@@ -8,7 +8,7 @@ const steps = [
 
 export function HowToGift() {
   return (
-    <Card.Root className="p-11">
+    <Card.Root>
       <Card.Body className="flex-row flex-wrap gap-8 items-start">
         <div className="flex-1 min-w-64">
           <Heading level="h3">Como presentear</Heading>
@@ -20,7 +20,10 @@ export function HowToGift() {
 
         <div className="flex-1 min-w-72 flex flex-col gap-4">
           {steps.map((step, i) => (
-            <div key={step} className="flex gap-4 items-center">
+            <div
+              key={step}
+              className="flex flex-col gap-2 items-start sm:flex-row sm:gap-4 sm:items-center"
+            >
               <span className="flex-none w-8 h-8 rounded-full bg-terra text-white flex items-center justify-center font-sans font-bold text-sm">
                 {i + 1}
               </span>
