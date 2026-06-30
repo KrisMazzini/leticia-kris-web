@@ -5,6 +5,7 @@ import "./globals.css";
 
 import { CartDrawer } from "@/features/gifts/components/cart-drawer";
 import { CartProvider } from "@/features/gifts/context/cart-context";
+import { Footer } from "@/shared/components/footer";
 import { Header } from "@/shared/components/header";
 
 const caveat = Caveat({
@@ -47,6 +48,7 @@ export default function RootLayout({
           <CartDrawer />
 
           <div className="overflow-x-hidden flex-1">{children}</div>
+          <Footer />
         </CartProvider>
       </body>
     </html>

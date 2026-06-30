@@ -7,7 +7,7 @@ import { buttonVariants } from "@/shared/components/ui/button";
 
 export default function SuccessPage() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-[80dvh] px-6 text-center">
+    <main className="flex flex-col items-center justify-center min-h-[100dvh] px-6 text-center">
       <div className="flex flex-col items-center gap-6 max-w-md">
         <div className="flex items-center justify-center w-16 h-16 rounded-full bg-terra/10">
           <Heart size={32} className="text-terra fill-terra" />
