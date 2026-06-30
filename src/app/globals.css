@@ -2,62 +2,82 @@
 
 /* Argila (default theme) */
 :root {
-  --bg:    #F3E7D6;
-  --card:  #FBF4E8;
-  --ink:   #3B2A1D;
-  --muted: #8E7A66;
-  --terra: #BC6044;
-  --olive: #7E8A5A;
+  --bg: #f3e7d6;
+  --card: #fbf4e8;
+  --ink: #3b2a1d;
+  --muted: #8e7a66;
+  --terra: #bc6044;
+  --olive: #7e8a5a;
 }
 
 @theme inline {
   /* Colors */
-  --color-bg:    var(--bg);
-  --color-card:  var(--card);
-  --color-ink:   var(--ink);
+  --color-bg: var(--bg);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
   --color-muted: var(--muted);
   --color-terra: var(--terra);
   --color-olive: var(--olive);
 
   /* Fonts */
   --font-script: var(--font-caveat), cursive;
-  --font-serif:  var(--font-spectral), Georgia, serif;
-  --font-sans:   var(--font-karla), system-ui, sans-serif;
+  --font-serif: var(--font-spectral), Georgia, serif;
+  --font-sans: var(--font-karla), system-ui, sans-serif;
 
   /* Shadows */
-  --shadow-card:     0 8px 26px rgba(60,40,20,.06);
-  --shadow-drawer:   -12px 0 40px rgba(40,26,16,.18);
-  --shadow-modal:    0 30px 80px rgba(40,26,16,.4);
-  --shadow-switcher: 0 8px 24px rgba(40,26,16,.12);
+  --shadow-card: 0 8px 26px rgba(60, 40, 20, 0.06);
+  --shadow-drawer: -12px 0 40px rgba(40, 26, 16, 0.18);
+  --shadow-modal: 0 30px 80px rgba(40, 26, 16, 0.4);
+  --shadow-switcher: 0 8px 24px rgba(40, 26, 16, 0.12);
 
   /* Animations */
-  --animate-slide-in: slideIn 320ms cubic-bezier(.22,1,.36,1) both;
-  --animate-fade-in:  fadeIn 250ms ease both;
-  --animate-pop-in:   popIn 300ms cubic-bezier(.22,1,.36,1) both;
+  --animate-slide-in: slideIn 320ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-fade-in: fadeIn 250ms ease both;
+  --animate-pop-in: popIn 300ms cubic-bezier(0.22, 1, 0.36, 1) both;
 
   /* Easing */
-  --ease-spring: cubic-bezier(.22,1,.36,1);
+  --ease-spring: cubic-bezier(0.22, 1, 0.36, 1);
 
   /* Z-index */
   --z-60: 60;
 }
 
 @keyframes slideIn {
-  from { transform: translateX(100%); }
-  to   { transform: translateX(0); }
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes popIn {
-  from { opacity: 0; transform: scale(.96); }
-  to   { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-::selection { background: rgba(188,96,68,.22); }
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background: rgba(188, 96, 68, 0.22);
+}
 
 input:focus,
 textarea:focus {

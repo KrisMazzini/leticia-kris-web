@@ -1,12 +1,13 @@
-import { Text } from "@/shared/components/ui";
+import { Button, Text } from "@/shared/components/ui";
 
+import { useCartContext } from "../context/cart-context";
 import { formatPrice } from "../utils/format-price";
 
-interface CartTotalProps {
-  total: number;
-}
+export function CartTotal() {
+  const { total, cartItems, goToStep } = useCartContext();
 
-export function CartTotal({ total }: CartTotalProps) {
+  if (cartItems.length === 0) return null;
+
   return (
     <div className="bg-card px-6 py-5 border-t border-black/8">
       <div className="flex items-baseline justify-between mb-4">
@@ -22,12 +23,9 @@ export function CartTotal({ total }: CartTotalProps) {
         </Text>
       </div>
 
-      <button
-        type="button"
-        className="w-full bg-terra text-white font-sans font-semibold text-base py-4 rounded-lg border-none cursor-pointer hover:opacity-90 transition-opacity"
-      >
-        Finalizar
-      </button>
+      <Button size="lg" className="w-full" onClick={() => goToStep(2)}>
+        Prosseguir com a compra
+      </Button>
     </div>
   );
 }

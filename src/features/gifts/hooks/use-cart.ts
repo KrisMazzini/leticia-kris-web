@@ -3,13 +3,15 @@
 import { useEffect, useState } from "react";
 
 import { gifts } from "../constants/gifts";
-
 import { readStorageItems } from "../storage/read-items";
 import { setStorageItems } from "../storage/set-items";
 
 export function useCart() {
   const [cartIds, setCartIds] = useState<string[]>([]);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [step, setStep] = useState<1 | 2 | 3>(1);
+  const [guestName, setGuestName] = useState("");
+  const [guestMessage, setGuestMessage] = useState("");
 
   useEffect(() => {
     setCartIds(readStorageItems());
@@ -34,12 +36,26 @@ export function useCart() {
     setCartIds((prev) => prev.filter((cartId) => cartId !== id));
   }
 
+  function clearCart() {
+    setCartIds([]);
+  }
+
+  function goToStep(n: 1 | 2 | 3) {
+    setStep(n);
+  }
+
+  function setGuestData(name: string, message: string) {
+    setGuestName(name);
+    setGuestMessage(message);
+  }
+
   function openDrawer() {
     setDrawerOpen(true);
   }
 
   function closeDrawer() {
     setDrawerOpen(false);
+    setStep(1);
   }
 
   return {
@@ -49,8 +65,14 @@ export function useCart() {
     isInCart,
     addToCart,
     removeFromCart,
+    clearCart,
     drawerOpen,
     openDrawer,
     closeDrawer,
+    step,
+    goToStep,
+    guestName,
+    guestMessage,
+    setGuestData,
   };
 }

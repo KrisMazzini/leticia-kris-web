@@ -1,5 +1,9 @@
 export { Button } from "./button";
 export { Card } from "./card";
+export { Divider } from "./divider";
 export { Heading } from "./heading";
+export { Input } from "./input";
 export { Link } from "./link";
+export { Stepper } from "./stepper";
 export { Text } from "./text";
+export { Textarea } from "./textarea";
