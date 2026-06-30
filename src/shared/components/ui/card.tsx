@@ -5,7 +5,7 @@ function Root({ className, ...props }: HTMLAttributes<HTMLDivElement>) {
   return (
     <div
       className={cn(
-        "bg-card border border-black/5 rounded-2xl shadow-card overflow-hidden p-5",
+        "bg-card border border-black/5 rounded-2xl shadow-card overflow-hidden px-5 py-3.5",
         className,
       )}
       {...props}

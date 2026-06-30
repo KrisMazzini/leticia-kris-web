@@ -3,16 +3,15 @@ import type { HTMLAttributes } from "react";
 
 import { cn } from "@/lib/utils";
 
-const textVariants = cva("", {
+const textVariants = cva("m-0 text-base font-sans", {
   variants: {
     variant: {
-      body: "font-serif font-light text-base leading-relaxed text-ink",
-      muted: "font-serif font-light text-base leading-relaxed text-muted",
-      caption: "font-sans text-sm leading-normal text-muted",
-      label:
-        "font-sans font-semibold text-xs tracking-widest uppercase text-terra",
+      body: "font-serif font-light leading-relaxed text-ink",
+      muted: "font-serif font-light leading-relaxed text-muted",
+      caption: "text-sm leading-normal text-muted",
+      label: "font-semibold tracking-widest uppercase text-terra",
       price: "font-serif font-semibold text-xl text-ink",
-      ui: "font-sans font-medium text-base text-ink",
+      ui: "font-medium text-ink",
     },
   },
   defaultVariants: {

@@ -40,7 +40,8 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-bg text-ink font-sans">
         <Header />
-        {children}
+
+        <div className="overflow-x-hidden flex-1">{children}</div>
       </body>
     </html>
   );
