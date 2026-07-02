@@ -63,18 +63,29 @@ export function CheckoutStepPix() {
           </Text>
           <ul className="flex flex-col divide-y divide-black/6">
             {cartItems.map((gift) => (
-              <li key={gift.id} className="flex items-center justify-between py-2.5">
+              <li
+                key={gift.id}
+                className="flex items-center justify-between py-2.5"
+              >
                 <Text as="span" variant="body" className="text-sm">
                   {gift.title}
                 </Text>
-                <Text as="span" variant="muted" className="text-sm shrink-0 ml-4">
+                <Text
+                  as="span"
+                  variant="muted"
+                  className="text-sm shrink-0 ml-4"
+                >
                   {formatPrice(gift.priceInCents)}
                 </Text>
               </li>
             ))}
           </ul>
           <div className="flex items-center justify-between pt-1">
-            <Text as="span" variant="muted" className="font-sans font-medium text-sm">
+            <Text
+              as="span"
+              variant="muted"
+              className="font-sans font-medium text-sm"
+            >
               Total
             </Text>
             <Text as="span" variant="price" className="text-lg">
@@ -84,22 +95,6 @@ export function CheckoutStepPix() {
         </div>
 
         <Divider className="w-full" />
-
-        <div className="flex flex-col items-center gap-3 w-full">
-          <Text as="span" variant="label">
-            Escaneie o QR Code
-          </Text>
-          <div className="relative w-48 h-48 rounded-xl overflow-hidden border border-black/8">
-            <Image
-              src={PIX_QR_CODE_URL}
-              alt="QR Code PIX"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
-
-        <Divider className="w-full">ou</Divider>
 
         <div className="flex flex-col gap-2 w-full">
           <Text as="span" variant="label">
@@ -123,16 +118,33 @@ export function CheckoutStepPix() {
             </button>
           </div>
         </div>
+
+        <Divider className="w-full">ou</Divider>
+
+        <div className="flex flex-col gap-3 w-full">
+          <Text as="span" variant="label">
+            Escaneie o QR Code
+          </Text>
+          <div className="relative w-48 h-48 mx-auto rounded-xl overflow-hidden border border-black/8">
+            <Image
+              src={PIX_QR_CODE_URL}
+              alt="QR Code PIX"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
       </div>
 
       <div className="px-6 py-5 border-t border-black/8 flex flex-col gap-3">
         <Text variant="caption" className="text-center">
           Após realizar o pagamento, clique em{" "}
-          <strong className="font-semibold text-ink">Confirmar pagamento</strong>{" "}
+          <strong className="font-semibold text-ink">Notificar casal</strong>{" "}
           para que o casal receba a sua mensagem.
         </Text>
+
         <Button size="lg" className="w-full" onClick={handleConfirm}>
-          Confirmar pagamento
+          Notificar casal
         </Button>
       </div>
     </div>
