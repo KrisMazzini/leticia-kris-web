@@ -15,14 +15,13 @@ interface CartItemProps {
 export function CartItem({ gift, onRemove }: CartItemProps) {
   return (
     <li className="flex items-center gap-3.5 py-3.5">
-      <div className="relative w-16 h-16 rounded-lg overflow-hidden flex-none">
-        <Image
-          src={gift.image}
-          alt={gift.title}
-          fill
-          className="object-cover"
-        />
-      </div>
+      <Image
+        src={gift.image}
+        alt={gift.title}
+        width={64}
+        height={64}
+        className="w-16 h-16 flex-none rounded-lg object-contain bg-white p-1"
+      />
 
       <div className="flex-1 min-w-0">
         <Text as="span" variant="ui" className="block leading-snug truncate">

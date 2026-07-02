@@ -14,12 +14,12 @@ export function GiftCard({ gift }: { gift: Gift }) {
 
   return (
     <div className="bg-card border border-black/5 rounded-2xl shadow-card overflow-hidden flex flex-col">
-      <div className="relative w-full h-48 flex-none">
+      <div className="relative w-full aspect-square flex-none bg-white">
         <Image
           src={gift.image}
           alt={gift.title}
           fill
-          className="object-cover"
+          className="object-contain rounded-2xl p-2"
         />
       </div>
 
