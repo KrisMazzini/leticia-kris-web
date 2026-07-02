@@ -17,11 +17,19 @@ function buildWhatsAppUrl(
   message: string,
   items: string[],
 ): string {
-  const itemList = items.join(", ");
-  const text = message
-    ? `Olá! Sou ${name} e quero presentear vocês com: ${itemList}. ${message}`
-    : `Olá! Sou ${name} e quero presentear vocês com: ${itemList}.`;
-  return `https://wa.me/5532991800066?text=${encodeURIComponent(text)}`;
+  const bulletList = items.map((item) => `• ${item}`).join("\n");
+  const lines = [
+    "Olá, Letícia & Kris",
+    "",
+    message,
+    "",
+    "E por isso, gostaria de presenteá-los com",
+    "",
+    bulletList,
+    "",
+    `Com carinho, ${name}.`,
+  ];
+  return `https://wa.me/5532991800066?text=${encodeURIComponent(lines.join("\n"))}`;
 }
 
 export function CheckoutStepPix() {
