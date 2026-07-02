@@ -1,4 +1,1 @@
-export const PIX_KEY =
-  "00020101021126580014br.gov.bcb.pix013600000000-0000-0000-0000-00000000000052040000530398654040.005802BR5913Leticia e Kris6008Municipio62070503***6304ABCD";
-
-export const PIX_QR_CODE_URL = "https://picsum.photos/seed/pix/200/200";
+export const PIX_KEY = "kristophermazzini@gmail.com";

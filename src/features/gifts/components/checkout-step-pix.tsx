@@ -5,8 +5,10 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
+import qrcodePix from "@/assets/qrcode-pix.png";
+
 import { Button, Divider, Text } from "@/shared/components/ui";
-import { PIX_KEY, PIX_QR_CODE_URL } from "../constants/pix";
+import { PIX_KEY } from "../constants/pix";
 import { useCartContext } from "../context/cart-context";
 import { formatPrice } from "../utils/format-price";
 
@@ -98,7 +100,7 @@ export function CheckoutStepPix() {
 
         <div className="flex flex-col gap-2 w-full">
           <Text as="span" variant="label">
-            PIX Copia e Cola
+            Chave PIX
           </Text>
           <div className="flex items-center gap-2 bg-card border border-black/10 rounded-lg px-3 py-2.5">
             <span className="flex-1 font-sans text-xs text-muted truncate">
@@ -125,14 +127,12 @@ export function CheckoutStepPix() {
           <Text as="span" variant="label">
             Escaneie o QR Code
           </Text>
-          <div className="relative w-48 h-48 mx-auto rounded-xl overflow-hidden border border-black/8">
-            <Image
-              src={PIX_QR_CODE_URL}
-              alt="QR Code PIX"
-              fill
-              className="object-cover"
-            />
-          </div>
+
+          <Image
+            src={qrcodePix}
+            alt="QR Code PIX"
+            className="p-2 bg-white w-48 h-48 mx-auto rounded-xl border border-black/8"
+          />
         </div>
       </div>
 
