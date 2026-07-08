@@ -10,7 +10,7 @@ import { useCartContext } from "../context/cart-context";
 
 const schema = z.object({
   name: z.string().min(1, "Nome obrigatório"),
-  message: z.string().optional(),
+  message: z.string().min(1, "Mensagem obrigatória"),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -49,7 +49,7 @@ export function CheckoutStepForm() {
         <Textarea
           id="message"
           label="Mensagem para o casal"
-          placeholder="Escreva uma mensagem carinhosa… (opcional)"
+          placeholder="Escreva uma mensagem carinhosa…"
           rows={4}
           {...register("message")}
         />
