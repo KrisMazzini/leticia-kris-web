@@ -23,8 +23,11 @@ export function Hero() {
         </Text>
 
         <div className="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-3.5 mt-8">
-          <InfoCard label="Data & Horário" value="18 de Julho, 13:00" />
-          <InfoCard label="Local" value="R. Onofre Oliveira Sales, 435" />
+          <InfoCard label="Data & Horário" value="A combinar" />
+          <InfoCard
+            label="Local"
+            value="R. Octavio Malvaccini, 580, Apto 1601 Bl. 2"
+          />
         </div>
       </div>
 
