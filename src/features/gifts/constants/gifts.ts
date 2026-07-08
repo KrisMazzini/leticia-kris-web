@@ -216,7 +216,7 @@ export const gifts: Gift[] = [
   },
   {
     id: "ea940db4-b5bc-44e2-8e01-85e53d13b35e",
-    category: "Limpeza",
+    category: "Lavanderia",
     title:
       "Kit 2 Dispenser Porta Sabão 1,5L + 2,3L Flow com Bico e Tampa Dosadora",
     description:
@@ -315,5 +315,107 @@ export const gifts: Gift[] = [
     priceInCents: 19589,
     image:
       "https://d3eu4cyioghqf3.cloudfront.net/v1/i/eyJzcmMiOiJodHRwczovL2QxeWR3am5peXZhdWZnLmNsb3VkZnJvbnQubmV0L3YyLzYxZjIyMDAwMzc5ZjJkZTgyMzc2ODNmZWNmZjg1YmNlNzQwMDA0ZTUzMzU5YTI3ZjViNzFjNTViYjU1ODZmZWUuanBnIiwicXVhbGl0eSI6MTAwfQ.webp",
+  },
+  {
+    id: "3889aa32-9605-49e0-a238-effc7b47357f",
+    category: "Casa",
+    title: "Banheira Ofurô Spa Inflável Intex PureSpa Bubble Massage 795L",
+    description:
+      "Banheira de hidromassagem inflável com aquecedor e 120 jatos de bolhas para até 4 pessoas. Inclui cobertura térmica e bolsa de transporte.",
+    priceInCents: 399900,
+    image:
+      "https://product-hub-prd.madeiramadeira.com.br/1057749/images/72ccd4a7-bc76-4030-ab29-4bd3c9d08000banheiraofurointexpurespainflavel795litrosintex220vsku3240v14102391.jpg",
+  },
+  {
+    id: "d327a500-d10d-4c97-bc7a-3fad2e943762",
+    category: "Eletro",
+    title: "Electrolux Purificador de Água Gelada Fria e Natural Elétrico",
+    description:
+      "Temperatura perfeita, tecnologia de filtragem, design compacto e inovador",
+    priceInCents: 67999,
+    image: "https://m.media-amazon.com/images/I/51NFGyGQN8L._SL1000_.jpg",
+  },
+  {
+    id: "69811572-e9c7-4f14-b413-1ff186335208",
+    category: "Eletro",
+    title: "Cervejeira Frost Free 82L Midea",
+    description:
+      "A Cervejeira Midea 82L é perfeita para manter suas bebidas na temperatura ideal, e suas cervejas bem geladas. Com um design moderno e sofisticado, ela combina perfeitamente com qualquer ambiente.",
+    priceInCents: 189989,
+    image: "https://m.media-amazon.com/images/I/412b8Rgx5yL._AC_SL1000_.jpg",
+  },
+  {
+    id: "3634e69e-ec64-451a-bece-457ffd441b6d",
+    category: "Casa",
+    title: "Tapete Sala Quarto Grande Mesclado 3,00 x 2,50m",
+    description:
+      "Unindo o charme rústico e a suavidade do estilo minimalista moderno, este tapete combina tons arenosos suaves que elevam o ambiente de forma discreta e sofisticada.",
+    priceInCents: 35900,
+    image: "https://m.media-amazon.com/images/I/81Jm-wlNY8L._AC_SL1200_.jpg",
+  },
+  {
+    id: "942735f6-6860-4e17-85b4-25f3c460fb34",
+    category: "Casa",
+    title: "Conjunto Para Área Externa De Fibra Sintética Estrutura Cinza",
+    description:
+      "Composto por duas poltronas, uma namoradeira e uma mesa de centro com tampo de vidro de 60x60, este conjunto oferece uma experiência completa para seus espaços.",
+    priceInCents: 245221,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_2X_779464-MLA82175181764_022025-F.webp",
+  },
+  {
+    id: "936f5fb5-8602-4dc2-a16d-794d678571cd",
+    category: "Casa",
+    title: "Escadinha Multiuso 2 Degraus De Madeira Banquinho Dobravel",
+    description:
+      "A escadinha multiuso de 2 degraus da Abidalla Decor é uma solução versátil e prática para seu dia a dia.",
+    priceInCents: 15057,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_2X_816693-MLB92330628801_092025-F.webp",
+  },
+  {
+    id: "ba933593-2999-47b9-9604-f95cf76daa54",
+    category: "Quarto",
+    title: "Capa de Colchão Impermeável Matelado Queen Size Branco",
+    description:
+      "Passamos um terço da nossa vida na cama e dormir bem garante uma boa dose de saúde. Para garantir boas noites de sono, é fundamental ter cuidados especiais com o seu colchão.",
+    priceInCents: 7899,
+    image: "https://m.media-amazon.com/images/I/61w0-vdANwL._AC_SL1200_.jpg",
+  },
+  {
+    id: "30d2cf48-9c04-413f-8b0a-dc5e19a4e2a4",
+    category: "Lavanderia",
+    title: "Conjunto 5 Sacos Para Lavar Roupas",
+    description:
+      "Kit com 5 saquinhos para lavar roupas delicadas – mais proteção e organização no dia-a-dia",
+    priceInCents: 3013,
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_2X_855929-MLB110127993034_042026-F.webp",
+  },
+  {
+    id: "48012a5e-f50c-4d49-b088-6d6658be72af",
+    category: "Organização",
+    title: "Kit 2x Nichos de Parede Sobrepor 28cmx40cm Branco",
+    description:
+      "28 cm (altura) × 40 cm (largura) × 7 cm (profundidade) Suporta até 3kg",
+    priceInCents: 13598,
+    image: "https://m.media-amazon.com/images/I/31PfRehyxXL._AC_SL1200_.jpg",
+  },
+  {
+    id: "825e1586-61aa-4b75-8ac2-223104eecd8e",
+    category: "Organização",
+    title: "Kit 2x Organizadores de Gaveta Ajustável",
+    description:
+      "Divisor versátil para cozinha. Ideal para talheres, utensílios e facas",
+    priceInCents: 14090,
+    image: "https://m.media-amazon.com/images/I/61RsZrvM5sL._AC_SL1200_.jpg",
+  },
+  {
+    id: "0cfae180-0cbd-4be5-9e15-08180238e94e",
+    category: "Organização",
+    title: "Organizador Extensível de Bambu",
+    description: "Organizador extensível de bambu MODUS 22,3x21x8,3cm",
+    priceInCents: 6990,
+    image: "https://m.media-amazon.com/images/I/61o7DgixKTL._AC_SL1024_.jpg",
   },
 ];
