@@ -142,6 +142,12 @@ export function CheckoutStepPix() {
             className="p-2 bg-white w-48 h-48 mx-auto rounded-xl border border-black/8"
           />
         </div>
+
+        <Divider className="w-full">ou</Divider>
+
+        <Text variant="caption" className="text-center">
+          Caso prefira utilizar cartão de crédito, entre em contato com o casal
+        </Text>
       </div>
 
       <div className="px-6 py-5 border-t border-black/8 flex flex-col gap-3">
